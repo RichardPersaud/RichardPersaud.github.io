@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RetroDev Studio — Apps for manga &amp; anime fans</title>
-<meta name="description" content="RetroDev Studio builds focused reading and streaming apps for Android and Windows — home of PANALIX and AniNinja.">
+<title>RetroDev Studio — Apps for manga, anime &amp; art fans</title>
+<meta name="description" content="RetroDev Studio builds focused reading, streaming and drawing apps for Android and Windows — home of PANALIX, AniNinja and Drawvio.">
 <link rel="icon" href="assets/logo.png">
 <style>
   :root {
@@ -85,6 +85,7 @@
   }
   h1 .teal { color: var(--teal); }
   h1 .yellow { color: var(--yellow); }
+  h1 .orange { color: #ff6b3d; }
   .hero-sub {
     color: var(--muted);
     font-size: clamp(16px, 2vw, 18px);
@@ -95,7 +96,7 @@
   /* ---------- app cards ---------- */
   .apps {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 28px;
     padding: 8px 0 88px;
   }
@@ -156,6 +157,7 @@
 
   .card-anininja { --card-accent: var(--teal); }
   .card-panalix  { --card-accent: var(--yellow); }
+  .card-drawvio  { --card-accent: #ff6b3d; }
 
   /* ---------- footer ---------- */
   footer {
@@ -186,6 +188,7 @@
     <nav class="nav-links" aria-label="Main">
       <a href="anininja/">AniNinja</a>
       <a href="panalix/">Panalix</a>
+      <a href="drawvio/">Drawvio</a>
     </nav>
   </div>
 </header>
@@ -196,8 +199,8 @@
   <section class="hero">
     <div class="wrap">
       <span class="hero-kicker">RetroDev Studio</span>
-      <h1>Apps for <span class="teal">anime</span> &amp; <span class="yellow">manga</span> fans.</h1>
-      <p class="hero-sub">A small studio making focused reading and streaming apps for Windows and Android. Pick an app to see what it does:</p>
+      <h1>Apps for <span class="teal">anime</span>, <span class="yellow">manga</span> &amp; <span class="orange">art</span> fans.</h1>
+      <p class="hero-sub">A small studio making focused reading, streaming and drawing apps for Windows and Android. Pick an app to see what it does:</p>
     </div>
   </section>
 
@@ -226,6 +229,18 @@
         </span>
         <span class="btn btn-app">Open Panalix &rarr;</span>
       </a>
+
+      <a class="app-card card-drawvio" href="drawvio/" aria-label="Open the Drawvio app page">
+        <img class="app-icon" src="assets/drawvio-feed.jpg" alt="Drawvio app screenshot" width="1080" height="2340" style="object-fit: cover;">
+        <h2>Drawvio</h2>
+        <p>A real-time social drawing app — paint solo, host live drawing sessions, chat while you create, and publish to the feed.</p>
+        <span class="app-tags">
+          <span class="tag">Android</span>
+          <span class="tag">Drawing</span>
+          <span class="tag">Live collab</span>
+        </span>
+        <span class="btn btn-app">Open Drawvio &rarr;</span>
+      </a>
     </div>
   </div>
 
@@ -249,6 +264,12 @@
     <a href="panalix-tos.html">Terms of service</a>
     <span class="footer-sep">·</span>
     <a href="panalix-delete-account.html">Delete account data</a>
+  </p>
+  <p style="margin-top:4px;">
+    Drawvio:
+    <a href="drawvio-privacy.html">Privacy policy</a>
+    <span class="footer-sep">·</span>
+    <a href="drawvio-tos.html">Terms of service</a>
   </p>
 </footer>
 

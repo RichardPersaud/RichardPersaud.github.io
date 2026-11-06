@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drawvio — Privacy Policy</title>
+<meta name="description" content="How Drawvio handles your data: account info, artwork, live sessions, chat, and your controls. No ads, no data selling.">
+<style>
+  :root {
+    --paper:    #FAF7F2;
+    --paper-2:  #F1EDE6;
+    --white:    #FFFFFF;
+    --border:   rgba(33, 29, 24, 0.10);
+    --ink:      #211D18;
+    --ink-600:  #57514A;
+    --ink-400:  #B3ACA1;
+    --vermilion:#C7471A;
+    --verm-700: #A63A12;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.65; }
+  a { color: var(--vermilion); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 56px 24px 24px; }
+  h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 8px; }
+  h1 .accent { color: var(--vermilion); }
+  .meta { color: var(--ink-600); font-size: 14px; margin-bottom: 28px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+  h2 { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; margin: 34px 0 10px; padding-top: 8px; }
+  p { color: var(--ink-600); margin: 0 0 12px; font-size: 15.5px; }
+  p strong, li strong { color: var(--ink); }
+  ul { color: var(--ink-600); margin: 0 0 12px 22px; font-size: 15.5px; }
+  li { margin-bottom: 6px; }
+  .card { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--vermilion); border-radius: 10px; padding: 16px 20px; margin: 0 0 14px; }
+  footer { margin-top: 48px; padding: 24px 0 12px; border-top: 1px solid var(--border); color: var(--ink-400); font-size: 13.5px; text-align: center; }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Draw<span class="accent">vio</span> — Privacy Policy</h1>
+  <p class="meta">Effective date: November 6, 2026 &middot; Contact: <a href="mailto:nukenoob2010@gmail.com">nukenoob2010@gmail.com</a> &middot; <a href="drawvio-tos.html">Terms of Service</a></p>
+
+  <p>Drawvio is a real-time drawing, collaboration and social gallery app. This policy explains what information the app and its community server handle, why, and what control you have. The short version: <strong>we collect only what makes the app work — your account, your art, and your interactions — and we never sell it or show ads.</strong></p>
+
+  <h2>1. Account information</h2>
+  <p>To use Drawvio you create an account. Depending on how you sign in, we store:</p>
+  <ul>
+    <li><strong>Email &amp; password sign-in</strong> — your email address and a securely hashed password (authentication is handled by Supabase Auth; we never see or store the password in plain text).</li>
+    <li><strong>Google sign-in</strong> — your Google account's name, email address and avatar as provided by Google when you consent.</li>
+    <li><strong>Your profile</strong> — the username, display name and bio you choose, plus the avatar image you may upload. Your profile is visible to other Drawvio users in the feed, on profiles, and in live sessions.</li>
+  </ul>
+
+  <h2>2. Your content</h2>
+  <p>Content you create and publish is stored on the community server so that other users can discover and interact with it:</p>
+  <ul>
+    <li><strong>Artwork</strong> — the drawings you publish (image and title) appear in the feed and on your profile.</li>
+    <li><strong>Interactions</strong> — reactions, comments, bookmarks, and who follows whom.</li>
+    <li><strong>Notifications</strong> — records of activity on your art and by people you follow, so the app can tell you about it.</li>
+    <li><strong>Blocks</strong> — the list of users you have blocked is kept private to your account.</li>
+  </ul>
+
+  <h2>3. Live sessions and chat</h2>
+  <p>When you host or join a live drawing session, the canvas strokes are transmitted in real time to everyone in that session. <strong>Chat messages and the participant list are visible to every participant of the session.</strong> Invited collaborators can draw on the host's canvas, subject to the permissions the host grants. Live session canvases remain associated with the host's account until the session is closed.</p>
+
+  <h2>4. What we do <strong>not</strong> do</h2>
+  <div class="card">
+    <p><strong>No advertising.</strong> Drawvio contains no ad SDKs and shows no ads. <strong>No data selling.</strong> We do not sell, rent, or trade your personal information. <strong>No third-party analytics or trackers.</strong> The app doesn't ship analytics SDKs that follow you across apps.</p>
+  </div>
+
+  <h2>5. Third-party services</h2>
+  <ul>
+    <li><strong>Google</strong> — only if you choose Google sign-in. Google receives the sign-in request and handles your consent; see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. We receive only the account fields listed in section 1.</li>
+    <li><strong>Supabase (self-hosted)</strong> — the community server runs on Supabase (database, authentication, storage, and the realtime layer), hosted on the developer's own managed server. All traffic between the app and the server uses HTTPS.</li>
+  </ul>
+
+  <h2>6. Data security</h2>
+  <p>Access to the server's database is restricted by row-level security rules: <strong>you can read or change your own data, and public content is only readable in the ways the app exposes it.</strong> Account credentials are handled by the authentication service, and all connections are encrypted in transit. Please keep your password unique to Drawvio and sign out on shared devices.</p>
+
+  <h2>7. Data retention and deletion</h2>
+  <ul>
+    <li><strong>Published content</strong> — delete any of your artwork, comments, or bookmarks from within the app at any time; deletion applies promptly.</li>
+    <li><strong>Your account</strong> — to delete your account and everything stored with it, email <a href="mailto:nukenoob2010@gmail.com">nukenoob2010@gmail.com</a> from the address you signed in with, and it will be deleted promptly.</li>
+    <li><strong>On-device data</strong> — uninstalling the app (or the device's "clear data") removes everything stored locally on the device, such as cached images and settings.</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>Drawvio is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has created an account, contact us at the address above and it will be removed.</p>
+
+  <h2>9. Changes to the terms or this policy</h2>
+  <p>If this policy or the <a href="drawvio-tos.html">Terms of Service</a> change materially, the updated version is posted at this URL with a new effective date, and the app will show the updated terms for your acceptance on next launch.</p>
+
+  <footer>Drawvio &middot; <a href="drawvio-tos.html">Terms of Service</a> &middot; <a href="index.html">App page</a> &middot; <a href="../index.html">RetroDev Studio</a> &middot; Contact: nukenoob2010@gmail.com</footer>
+</div>
+</body>
+</html>
