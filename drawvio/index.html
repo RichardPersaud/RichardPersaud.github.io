@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drawvio — Draw live with friends. Share artwork. Follow artists.</title>
 <meta name="description" content="A real-time social drawing app: paint solo in a studio, host live drawing sessions with viewers and collaborators, chat while you draw, and publish to the feed.">
-<link rel="icon" href="../assets/drawvio-feed.jpg">
+<link rel="icon" href="../assets/drawvio-logo.png">
 <style>
   /* Drawvio design system — "ink & paper". Warm paper chrome, ink text,
      hairline borders, and ONE accent: vermilion, the seal-red of an
@@ -67,8 +67,14 @@
   .nav-links a.back { color: var(--ink-400); }
 
   /* ---------- hero ---------- */
-  .hero { position: relative; text-align: center; padding: 100px 0 64px; }
+  .hero { position: relative; text-align: center; padding: 72px 0 64px; }
   .hero > * { position: relative; z-index: 1; }
+  .hero-logo {
+    width: 190px; height: auto;
+    margin: 0 auto 26px;
+    border-radius: 28%;
+    box-shadow: 0 16px 44px rgba(33, 29, 24, 0.14);
+  }
   .hero-kicker {
     display: inline-block;
     color: var(--vermilion); font-size: 12px; font-weight: 700;
@@ -218,11 +224,12 @@
     </div>
     <section class="hero">
       <div class="wrap">
+        <img class="hero-logo" src="../assets/drawvio-logo.png" alt="Drawvio logo — a crayon pencil drawing a squiggle" width="512" height="512">
         <span class="hero-kicker">Draw solo &middot; Go live &middot; Share</span>
         <h1>Draw live with friends.<br>Share <span class="accent">artwork</span>. Follow artists.</h1>
         <p class="hero-sub">Drawvio is a real-time social drawing app: paint solo in a distraction-free studio, host live sessions with viewers and invited collaborators, chat while you draw, and publish to the feed.</p>
         <div class="hero-ctas">
-          <a class="btn btn-accent" href="#shots">See it in action</a>
+          <a class="btn btn-accent" href="https://github.com/RichardPersaud/Drawvio/releases/latest" rel="noopener">Get the app</a>
           <a class="btn btn-ghost" href="#features">Explore features</a>
         </div>
       </div>
@@ -269,12 +276,12 @@
         <div class="feature">
           <span class="tile" aria-hidden="true">&#9998;</span>
           <h3>A serious studio</h3>
-          <p>Pressure-smooth pen strokes, an eraser, rectangle/circle/line tools, and a curated palette — autosaved as you work.</p>
+          <p>Eighteen hand-tuned brushes with pressure smoothing, layers with an alpha eraser, precise color mixing, shapes and a zoom canvas — autosaved as you work.</p>
         </div>
         <div class="feature">
           <span class="tile" aria-hidden="true">&#10084;</span>
           <h3>A social gallery</h3>
-          <p>Publish finished pieces to the feed. Collect reactions, comments and bookmarks; follow artists so their work finds you.</p>
+          <p>Sign in with your Google account, publish finished pieces to the feed, collect reactions, comments and bookmarks, and follow artists so their work finds you.</p>
         </div>
         <div class="feature">
           <span class="tile" aria-hidden="true">&#10138;</span>
